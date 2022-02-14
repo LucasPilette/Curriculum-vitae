@@ -1,0 +1,556 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+html,
+body {
+    overflow-x: hidden;
+}
+
+body {
+    position: relative
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.pdf1 {
+    margin-top: 5em;
+}
+
+.mailLink {
+    filter: invert(32%) sepia(100%) saturate(5411%) hue-rotate(335deg) brightness(104%) contrast(98%);
+    height: 1.5em;
+}
+
+.links {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 1em;
+    padding-bottom: 2em;
+    color: #FFF;
+    font-size: 1.1em;
+}
+
+.logos {
+    color: #FFF;
+}
+
+.comps {
+    font-size: 180%;
+}
+
+#pdf {
+    color: #FFF;
+    border-radius: 15px;
+    transition: 0.2s;
+    font-size: 1.5em;
+}
+
+#pdf:hover {
+    padding: 15px;
+    border-radius: 15px;
+    background: #000;
+    color: #FD2155;
+    border: solid 1px #FD2155;
+}
+
+ul {
+    padding: 0;
+}
+
+.skills {
+    width: 100%;
+    margin: 2em auto;
+    padding: 0 2em 0 2em;
+}
+
+li {
+    margin: 3em 0;
+    text-align: start;
+}
+
+.bar {
+    background: #353b48;
+    display: block;
+    height: 2px;
+    border-radius: 3px;
+    box-shadow: 0 0 10px #FD2155;
+}
+
+h3 {
+    padding-left: 1em;
+}
+
+.bar span {
+    height: 2px;
+    float: left;
+    background: #FD2155;
+    border-radius: 3px;
+}
+
+.html {
+    width: 80%;
+    animation: html 2s;
+}
+
+.CSS {
+    width: 90%;
+    animation: CSS 2s;
+}
+
+.Javascript {
+    width: 75%;
+    animation: Javascript 2s;
+}
+
+.PHP {
+    width: 65%;
+    animation: PHP 2s;
+}
+
+@keyframes html {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 80%;
+    }
+}
+
+@keyframes CSS {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 90%;
+    }
+}
+
+@keyframes Javascript {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 75%;
+    }
+}
+
+@keyframes PHP {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 65%;
+    }
+}
+
+
+a {
+    text-decoration: none;
+    color: #fff;
+    transition: 0.2s;
+}
+
+a:hover {
+    transform: scale(1.2);
+    color: #FD2155;
+}
+
+body {
+    font-family: 'Monument Extended', sans-serif;
+    background-color: rgb(22, 22, 22);
+}
+
+.green_effect {
+    color: #08FDD8;
+}
+
+.pink_effect {
+    color: #FD2155;
+}
+
+#name {
+    font-size: 5.5vw;
+}
+
+.navbar {
+    font-size: 100%;
+}
+
+#age {
+    font-size: 175%;
+}
+
+#location {
+    font-size: 225%;
+}
+
+#back_text {
+    position: relative;
+    text-align: center;
+}
+
+.arrow {
+    width: 40%;
+    height: auto;
+    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(36deg) brightness(102%) contrast(105%);
+}
+
+.bio {
+    margin-top: 10vw;
+    font-size: 150%;
+    text-align: start;
+}
+
+.animated {
+    background: linear-gradient(to right, #CCC 50%, #2bfcdc 50%, #08FDD8);
+    background-size: 200%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: 1s ease-out;
+}
+
+.animated:hover {
+    background-position: -100%;
+}
+
+.text_long {
+    font-family: 'Univia Pro', sans-serif;
+}
+
+.text_effect {
+    position: absolute;
+    top: 1%;
+    left: 67%;
+    font-size: 150%;
+    width: 110%;
+}
+
+.picture {
+    border-radius: 2%;
+    margin-top: 5vh;
+    margin-left: 1.5em;
+    width: 100%;
+    height: auto;
+    filter: grayscale(100%);
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -ms-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    transition: all 0.2s;
+}
+
+.picture:hover {
+    filter: grayscale(0);
+    transform: scale(1.1);
+}
+
+#back {
+    background: #000;
+    color: #FD2155;
+    border: solid 1px #FD2155;
+    padding: 15px;
+    border-radius: 15px;
+}
+
+h1 {
+    font-size: 5.5vw;
+}
+
+.projects {
+    margin-top: 8vw;
+}
+
+.project_title {
+    padding-bottom: 11%;
+}
+
+.project_title2 {
+    padding-bottom: 2%;
+}
+
+.project_text {
+    color: rgb(196, 196, 196);
+    font-family: 'Univia Pro', sans-serif;
+    font-size: 150%;
+}
+
+#white {
+    border-top: 2px solid #08FDD8;
+    border-radius: 10%;
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+
+.project_images {
+    width: 70%;
+    height: auto;
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+    border-radius: 10px;
+}
+
+.first {
+    margin-left: 5vw;
+    margin-bottom: 4vh;
+}
+
+.project_first {
+    margin-left: 2vw;
+}
+
+.second {
+    margin-right: 5vw;
+}
+
+.project_second {
+    margin-left: 2vw;
+}
+
+#form {
+    margin-bottom: 3vh;
+}
+
+.contact {
+    padding-top: 15vh;
+}
+
+#contact_form {
+    font-family: 'Univia Pro', sans-serif;
+}
+
+#button {
+    background: #08FDD8;
+    color: #000;
+    transition: 0.1s;
+}
+
+#button:hover {
+    background: #000;
+    color: #08FDD8;
+    border: solid 1px #08FDD8;
+}
+
+h2 {
+    font-size: 150%;
+    font-family: 'Univia Pro', sans-serif;
+    margin-bottom: 3vh;
+}
+
+#value1 {
+    color: #08FDD8;
+}
+
+.menu__item {
+    position: relative;
+    padding: 0 6vw;
+}
+
+.menu__item-link {
+    display: inline-block;
+    cursor: pointer;
+    position: relative;
+    -webkit-text-stroke: 1.5px #ffff;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+    transition: opacity 0.4s;
+}
+
+.menu__item-link::before {
+    all: initial;
+    font-family: sofia-pro, sans-serif;
+    counter-increment: menu;
+    position: absolute;
+    bottom: 60%;
+    left: 0;
+    pointer-events: none;
+}
+
+.menu__item-link:hover {
+    transition-duration: 0.1s;
+    opacity: 0;
+}
+
+.menu__item-img {
+    pointer-events: none;
+    position: absolute;
+    height: 280%;
+    max-height: 400px;
+    opacity: 0;
+    left: 125%;
+    top: 60%;
+    transform: translate3d(calc(-100% - 6vw), -30%, 0) translate3d(0, 20px, 0);
+}
+
+.menu__item-link:hover+.menu__item-img {
+    opacity: 1;
+    transform: translate3d(calc(-100% - 6vw), -30%, 0) rotate3d(0, 0, 1, 4deg);
+    transition: all 0.4s;
+}
+
+.menu {
+    padding: 0.05em 0 0.05em;
+    --offset: 20vw;
+    --move-initial: calc(-25% + var(--offset));
+    --move-final: calc(-50% + var(--offset));
+    font-size: 1em;
+}
+
+.marquee {
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    color: #FD2155;
+    pointer-events: none;
+    mix-blend-mode: difference;
+}
+
+.marquee__inner {
+    width: fit-content;
+    display: flex;
+    position: relative;
+    animation: marquee 5s linear infinite;
+    animation-play-state: paused;
+    opacity: 0;
+    transition: opacity 0.1s;
+}
+
+.menu__item-link:hover~.marquee .marquee__inner {
+    animation-play-state: running;
+    opacity: 1;
+    transition-duration: 0.4s;
+}
+
+
+.menu__item-link,
+.marquee span {
+    white-space: nowrap;
+    font-size: 1em;
+    padding: 0 0vw;
+    font-weight: 900;
+    line-height: 1.15;
+}
+
+.marquee span {
+    font-style: italic;
+}
+
+
+@keyframes marquee {
+    0% {
+        transform: translate3d(var(--move-initial), 0, 0);
+    }
+
+    100% {
+        transform: translate3d(var(--move-final), 0, 0);
+    }
+}
+
+@media screen and (max-width:768px) {
+    .text_effect {
+        top: 4%;
+        left: 10%;
+        font-size: 110%;
+    }
+
+    a {
+        color: #08FDD8;
+    }
+
+    .age {
+        font-size: 150%;
+    }
+
+    .location {
+        font-size: 170%;
+    }
+
+    .project_title {
+        font-size: 190%;
+        color: #08FDD8;
+    }
+
+    .project_title2 {
+        font-size: 190%;
+        color: #08FDD8;
+    }
+
+    #web_dev {
+        color: #FD2155;
+    }
+
+    .picture {
+        margin-left: 0;
+    }
+
+    html,
+    body {
+        overflow-x: hidden;
+    }
+
+    body {
+        position: relative
+    }
+
+}
+
+@media screen and (min-width:768px) {
+    a {
+        margin-right: 1em;
+        margin-left: 1em;
+    }
+
+    .bio {
+        margin-right: 5vw;
+    }
+
+    .skills {
+        padding: 0 0 0 4em;
+    }
+
+    .links {
+        padding-top: 1em;
+        font-size: 1.3em;
+    }
+}
+
+@media screen and (min-width:1200px) {
+    .navbar {
+        position: fixed;
+    }
+}
+
+@media screen and (max-width:576px){
+    .navbarDiv{
+        position: fixed;
+        top: 40px;
+        z-index: 9999;
+        transition: 300ms ease;
+    }
+    .navbarDiv-after{
+        position: fixed;
+        top: 0;
+        z-index: 9999;
+        transition: 300ms ease;
+    }
+    .navbar{
+        width: 93%;
+        justify-content: space-around;
+    }
+
+    .ageLoc{
+        margin-top: 5%;
+    }
+}

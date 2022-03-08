@@ -1,3 +1,14 @@
+<?php
+    if($_SERVER['REQUEST_METHOD'] == 'POST'){
+        $mail = $_POST['mailAdress'];
+        $firstName = $_POST['firstName'];
+        $lastName = $_POST['lastName'];
+        $content = $_POST['content'];
+        mail('pilettelucas@gmail.com',"Mail de $lastName $firstName", "$content Contact : $mail","From : $mail \r\n");
+    };
+?>
+
+
 <!DOCTYPE html>
 <html lang="fr">
 
@@ -82,7 +93,7 @@
         </div>
         <div class="row text-white">
             <div class="col text-center pdf1">
-                <a href="" id="pdf"> Télécharger mon CV en PDF</a>
+                <a href="assets/pdf/Lucas PILETTE .pdf" id="pdf" download="CV Pilette Lucas"> Télécharger mon CV en PDF</a>
             </div>
         </div>
     </div>
@@ -97,12 +108,12 @@
                     <p class="project_text project_first">Premier projet responsive et découverte de bootstrap.</p>
                 </div>
             </div>
-            <div class="col-12 col-sm-7 text-end">
-                <img src="assets/img/LANDSCAPES_blog_banner_1240x400-1.jpg" class="project_images">
+            <div class="col-12 col-sm-7 text-center">
+                <img src="assets/img/responsive.png" class="project_images" id="responsive">
             </div>
             <div class="col-12 d-sm-none" id="white"></div>
-            <div class="col-12 col-sm-7">
-                <img src="assets/img/photo-1536257104079-aa99c6460a5a.jpg" class="project_images">
+            <div class="col-12 col-sm-7 text-center text-sm-start">
+                <img src="assets/img/ShiFuMi.png" class="project_images">
             </div>
             <div class="col-12 col-sm-5 d-flex align-items-center">
                 <div class="second">
@@ -117,18 +128,17 @@
                     <p class="project_text project_first">Création d'un Json et d'un site de vente de Sneakers.</p>
                 </div>
             </div>
-            <div class="col-12 col-sm-7 text-end pt-4">
-                <img src="assets/img/LANDSCAPES_blog_banner_1240x400-1.jpg" class="project_images">
+            <div class="col-12 col-sm-7 text-center text-sm-end pt-4">
+                <img src="assets/img/sneakers.png" class="project_images">
             </div>
             <div class="col-12 d-sm-none" id="white"></div>
-            <div class="col-12 col-sm-7">
-                <img src="assets/img/photo-1536257104079-aa99c6460a5a.jpg" class="project_images">
+            <div class="col-12 col-sm-7 text-center text-sm-start ">
+                <img src="assets/img/calendar.png" class="project_images">
             </div>
             <div class="col-12 col-sm-5 d-flex align-items-center">
                 <div class="second">
-                    <h2>Bootstrap comme un crack</h2>
-                    <p class="project_text project_second">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                        Porro quasi ratione nihil voluptatibus consequuntur.</p>
+                    <h2>Calendrier en PHP</h2>
+                    <p class="project_text project_second">Création d'un calendrier en PHP avec manipulation de classes.</p>
                 </div>
             </div>
         </div>
@@ -142,13 +152,13 @@
                 <div class="col-12 col-sm-8 offset-sm-2">
                     <div class="container mb-5">
                         <div class="row">
-                            <form id="contact_form">
+                            <form id="contact_form" method="post">
                                 <div class="col-12">
                                     <label for="mailUser" class="form-label">Adresse Mail</label>
                                     <div class="input-group ">
                                         <span class="input-group-text" id="basic-addon1">@</span>
                                         <input type="text" class="form-control" placeholder="exemple@mail.com"
-                                            aria-label="Username" aria-describedby="basic-addon1">
+                                            aria-label="Username" aria-describedby="basic-addon1" name="mailAdress">
                                     </div>
                                     <div id="emailHelp" class="form-text">Je vous recontacterai via cette adresse mail
                                     </div>
@@ -157,20 +167,20 @@
                                     <div class="col-5">
                                         <label for="nameUser" class="form-label">Nom</label>
                                         <input type="text" class="form-control" id="nameUser"
-                                            aria-describedby="nameHelp" placeholder="Nom">
+                                            aria-describedby="nameHelp" placeholder="Nom" name="firstName">
                                     </div>
                                     <div class="col-5">
                                         <label for="firstNameUser" class="form-label">Prénom</label>
                                         <input type="text" class="form-control" id="firstNameUser"
-                                            aria-describedby="firstNameHelp" placeholder="Prénom">
+                                            aria-describedby="firstNameHelp" placeholder="Prénom" name="lastName">
                                     </div>
                                 </div>
                                 <div class="col-12">
                                     <label for="messageUser" class="form-label">Votre message</label>
-                                    <textarea class="form-control" name="message" id="messageUser" cols="30" rows="5"
-                                        placeholder="Veuillez renseigner votre message..."></textarea>
+                                    <textarea class="form-control" id="messageUser" cols="30" rows="5"
+                                        placeholder="Veuillez renseigner votre message..." name="content"></textarea>
                                 </div>
-                                <div class="btn mt-3 ms-3" id="button" type="submit">Envoyer</div>
+                                <input class="btn mt-3 ms-3" id="button" type="submit" value="Envoyer">
                             </form>
                         </div>
                     </div>
